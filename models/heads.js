@@ -12,6 +12,10 @@ const HeadSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
+        subtitle:
+        {
+            type: String,
+        },
         instagram:
         {
             type: String,
