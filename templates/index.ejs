@@ -98,6 +98,28 @@
     .countr {
       margin: 0px 40px;
     }
+
+    .raise:hover,
+    .raise:focus {
+      box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+      transform: translateY(-0.25em);
+      border-color: var(--hover);
+      color: #fff;
+    }
+
+
+    .raise {
+      color: var(--color);
+      transition: 0.25s;
+      background: none;
+      border: 2px solid;
+      font: inherit;
+      line-height: 1;
+      margin: 0.5em;
+      padding: 1em 2em;
+      --color: #ff6060;
+      --hover: #e5ff60;
+    }
   </style>
 
 </head>
@@ -281,21 +303,9 @@
                 </div>
 
                 <div class="driver" style="display:flex ;justify-content:center;">
-                  <div style="border-radius: 10px;background-color: rgb(182, 14, 46);
-                    width: 7%;
-                    height: 60px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0px 10px;" id="day1">DAY-1
+                  <div class="raise" id="day1">DAY 1
                   </div>
-                  <div style="border-radius: 10px;background-color: rgb(182, 14, 46);
-                    width: 7%;
-                    height: 60px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0px 10px;" id="day2">DAY-2
+                  <div class="raise" id="day2">DAY 2
                   </div>
                 </div>
 
@@ -309,12 +319,16 @@
                               class="d-flex align-items-center justify-content-around justify-content-between w-100">
                               <div class="team-1 text-center" style="width:70% ;max-height:500px;">
                                 <img style="max-width: 100%;
-                                height: 500px;" src="/images/nishantsuri.jpg">
+                                max-height: 400px;" src="/images/nishantsuri.jpg">
                               </div>
 
                             </div>
                           </div>
                         </div>
+
+                        <h2 style="text-align:center; font-family:'serif'">
+                          Nishant Suri
+                        </h2>
                       </div>
 
                       <div class="carousel-item ">
@@ -324,12 +338,15 @@
                               class="d-flex align-items-center justify-content-around justify-content-between w-100">
                               <div class="team-1 text-center" style="width:70% ;max-height:500px;">
                                 <img style="max-width: 100%;
-                                height: 500px;" src="/images/assem.jpg">
+                                max-height: 400px;" src="/images/assem.jpg">
                               </div>
 
                             </div>
                           </div>
                         </div>
+                        <h2 style="text-align:center; font-family:'serif'">
+                          Aseem Sharma
+                          </h1>
                       </div>
                     </div>
 
@@ -356,11 +373,15 @@
                               class="d-flex align-items-center justify-content-around justify-content-between w-100">
                               <div class="team-1 text-center" style="width:70% ;max-height:500px;">
                                 <img style="max-width: 100%;
-                                    height: 500px;" src="/images/nalayak.jpg">
+                                    max-height: 400px;" src="/images/nalayak.jpg">
                               </div>
 
                             </div>
                           </div>
+
+                          <h2 style="text-align:center; font-family:'serif';">
+                            Nalayak Band
+                          </h2>
                         </div>
                       </div>
 
@@ -371,11 +392,15 @@
                               class="d-flex align-items-center justify-content-around justify-content-between w-100">
                               <div class="team-1 text-center" style="width:70% ;max-height:500px;">
                                 <img style="max-width: 100%;
-                                    height: 500px;" src="/images/swattrex.jpg">
+                                    max-height: 400px;" src="/images/swattrex.jpeg">
                               </div>
 
                             </div>
                           </div>
+
+                          <h2 style="text-align:center; font-family:'serif'">
+                            Swattrex
+                          </h2>
                         </div>
 
                       </div>
