@@ -245,16 +245,26 @@
 
                           <% if(notices.length> 0) {%>
                             <ul>
+
+                              <li style="list-style: none;">1 . Check cricket live score <a
+                                  href="https://cricheroes.in/tournament/507820/Rann-Neeti-Cricket"
+                                  target="_blank">here</a>
+                                .</li>
+
+                              <li style="list-style: none;">2 . Check Athletics heats results <a
+                                  href="https://drive.google.com/file/d/1I6UjmuOOO__M__ml2zu3basWUT9a9fWZ/view?usp=sharing"
+                                  target="_blank">here</a>
+                                .</li>
+
+                              <li style="list-style: none;">3 . Check Rann-Neeti sports results <a href="/rulebooks"
+                                  target="_blank">here</a>
+                                .</li>
+
                               <%for(let i=1;i<notices.length;i++) {%>
                                 <li style="list-style: none;">
-                                  <%=i%> . <%= notices[i][1] %>
+                                  <%=i + 3%> . <%= notices[i][1] %>
                                 </li>
                                 <% } %>
-
-                                  <li style="list-style: none;">3 . Check cricket live score <a
-                                      href="https://cricheroes.in/tournament/507820/Rann-Neeti-Cricket"
-                                      target="_blank">here</a>
-                                    .</li>
                             </ul>
 
                             <%} else{ %>

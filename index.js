@@ -1,7 +1,6 @@
 const express = require("express")
 const mongoose = require("mongoose")
 const session = require("express-session")
-const events = require("./models/event.js")
 const users = require("./models/user.js")
 const Faqs = require("./models/faq.js");
 const port = process.env.PORT || 5000;
@@ -18,6 +17,7 @@ const connectDB = require("./config/db");
 const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 const { findAllNotices, isAdmin } = require("./readFromSheet.js")
+const events = require("./models/event.js")
 // Load config
 require("dotenv").config({ path: "./config/config.env" });
 
@@ -84,12 +84,14 @@ app.use("/payment", paymentRoutes);
 app.get("/", async (req, res) => {
     const message = req.flash("message");
     const faqs = await Faqs.find({}).lean();
+    const event = await events.find({}).lean();
     const context = {
         authenticated: req.isAuthenticated(),
         message: message,
         faqs: faqs,
         notices: await findAllNotices(),
-        admin: await isAdmin(req)
+        admin: await isAdmin(req),
+        events: event
     }
     res.render("index", context);
     req.flash("message", "");
