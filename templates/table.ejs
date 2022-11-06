@@ -158,8 +158,10 @@
                                             href="tel:<=events[i].eventCoordinator.phone%>">
                                             <%=events[i].eventCoordinator.phone%>
                                         </a></td>
-                                    <td class="column6" data="Results"><a href="<%=events[i].results%>"
-                                            target="_blank">View</a></td>
+                                    <%if(events[i].results) {%>
+                                        <td class="column6" data="Results"><a href="<%=events[i].results%>"
+                                                target="_blank">View</a></td>
+                                        <%}%>
                                 </tr>
                                 <% } %>
                         </tbody>
