@@ -137,6 +137,7 @@
                                 <td class="column3">Rulebook</td>
                                 <td class="column4">Coordinator</td>
                                 <td class="column5">Mobile Number</td>
+                                <td class="column6">Results</td>
                             </tr>
                         </thead>
                         <tbody class="text-center">
@@ -157,6 +158,8 @@
                                             href="tel:<=events[i].eventCoordinator.phone%>">
                                             <%=events[i].eventCoordinator.phone%>
                                         </a></td>
+                                    <td class="column6" data="Results"><a href="<%=events[i].results%>"
+                                            target="_blank">View</a></td>
                                 </tr>
                                 <% } %>
                         </tbody>

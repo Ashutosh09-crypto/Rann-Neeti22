@@ -73,6 +73,9 @@ const EventSchema = new mongoose.Schema(
         genderSpecific: {
             type: Boolean,
             default: false,
+        },
+        results: {
+            type: String,
         }
     }
 );
